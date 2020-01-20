@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			.reveal h1 {
+				font-size: 2em;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<img src="img/ian.jpg" alt="A bald man whos goes by the name, Ian" style="width: 200px; border: none;" />
+					<h1>Ian Ovenden</h1>
+					<h3>Senior UI Developer - Pega</h3>
+					<p>
+						<small><a href="https://www.twitter.com/ianovenden">Twitter</a> | <a href="https://www.linkedin.com/in/ian-ovenden-99832913/">LinkedIn</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h1><span style="color: yellow;">When</span> did I join Pega?</h1>
+					<span class="fragment">
+						<h3>April 9th 2018</h3>
+					</span>
+				</section>
+
+				<section>
+					<h1><span style="color: yellow;">Why</span> did I join Pega?</h1>
+					<p class="fragment grow">A fresh challenge</p>
+					<p class="fragment grow">Multiple projects</p>
+					<p class="fragment grow">Travel</p>
+				</section>
+
+				<section>
+					<section>
+						<h1 style="font-size: 1em;"><span style="color: yellow;">Why</span> am I a good fit for the XD Consultancy Manager role?</h1>
+					</section>
+					<section>
+						<h1 style="font-size: 0.8em;"><span style="color: yellow;">Technical</span> ability</h1>
+						<p>I have been working as a Web Developer in various roles for almost 20 years.</p>
+					</section>
+					<section data-background="img/map.svg">
+						<h1 style="font-size: 0.8em;">Experience <span style="color: yellow;">managing</span> a diverse, globally located team</h1>
+					</section>
+					<section data-background-iframe="https://medium.com/@ianovenden">
+						<div style="position: absolute; width: 35%; left: -20%; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h1 style="font-size: 0.8em;">A deep <span style="color: yellow;">Passion</span> for the web</h1>
+						</div>			
+					</section>
+					<section>
+						<h1 style="font-size: 0.8em;">A <span style="color: yellow;">drive</span> to encourage others to meet their potential</h1>
+						<p>Mentoring</p>
+						<p>Enthusiasm</p>
+						<p>Ownership</p>
+						<p>Collaboration</p>
+					</section>
+				</section>
+
+				<section>
+					<h1>Well <span style="color: yellow;">rounded</span></h1>
+					<p>I believe these core skills and tenets, along with strong organisation and communication skills mark me out as a strong candidate for the positon.</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
